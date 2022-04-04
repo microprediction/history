@@ -31,7 +31,7 @@ jobs:
             pip install wheel
             pip install py4j
             pip install pandas
-            pip install git+https://github.com/microprediction/microprediction.git
+            pip install --upgrade git+https://github.com/microprediction/microprediction.git
       - name: Create data in timestamp2
         run: |
           python run_history_test.py
