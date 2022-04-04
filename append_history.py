@@ -21,6 +21,7 @@ def append_random():
            chrono_df = pd.read_csv(chrono_csv)
            modification_time = os.path.getmtime(chrono_csv)
            seconds = time.time()-modification_time 
+           print('Seconds since modification: '+str(seconds))
            chrono = [ (t,v) for t,v in zip(chrono_df['time'].values, chrono_df['value'].values) ] 
            appended = mr.append_chrono(chrono=chrono, seconds=seconds, name=name)
       else:
