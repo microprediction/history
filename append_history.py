@@ -2,7 +2,7 @@ from microprediction import MicroReader
 import os
 import random
 from copy import deepcopy
-STREAM_PATH = os.path.dirname(os.path.realpath(__file__)) + os.path.sep + 'csv' + os.path.sep
+CSV_PATH = os.path.dirname(os.path.realpath(__file__)) + os.path.sep + 'csv' + os.path.sep
 import matplotlib.pyplot as plt
 import time
 import pathlib
@@ -14,7 +14,7 @@ STREAMS = [ n for n in mr.get_stream_names() ]
 def append_random():
       """ Pick a random stream and update the history """
       name = random.choice(STREAMS)
-      chrono_csv = STREAM_PATH + name.replace('.json','.csv') 
+      chrono_csv = CSV_PATH + name.replace('.json','.csv') 
       # Find time of update
       fchrono = pathlib.Path(chrono_csv)
       if fchrono.exists():
