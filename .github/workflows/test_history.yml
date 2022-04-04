@@ -30,6 +30,7 @@ jobs:
             python -m pip install --upgrade pip
             pip install wheel
             pip install py4j
+            pip install pandas
             pip install git+https://github.com/microprediction/microprediction.git
       - name: Create data in timestamp2
         run: |
