@@ -1,13 +1,12 @@
 from microprediction import MicroReader
 import os
 import random
-from copy import deepcopy
-RECENT_CSV = os.path.dirname(os.path.realpath(__file__)) + os.path.sep + 'recent' + os.path.sep
-import matplotlib.pyplot as plt
 import time
 import pathlib
 import time
+import pandas as pd
 
+RECENT_CSV = os.path.dirname(os.path.realpath(__file__)) + os.path.sep + 'recent' + os.path.sep
 mr = MicroReader()
 STREAMS = [ n for n in mr.get_stream_names() ]
 
