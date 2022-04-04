@@ -36,7 +36,7 @@ def append_random():
       
       # Check size of file 
       mb = os.path.getsize(chrono_csv)/(1024*1024)
-      if mb>MB:
+      if mb>MB_LIMIT:
          # If we approach the file size limit, shuffle to the archive 
          older = df_new[:-10]
          newer = df_new[-10:] 
