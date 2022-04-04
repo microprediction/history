@@ -47,5 +47,5 @@ def append_random():
          
 
 if __name__=='__main__':
-    for _ in range(20):
+    for _ in range(100):
         append_random()
