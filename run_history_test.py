@@ -43,7 +43,7 @@ def append_random():
          newer = df_new[-10:] 
          older_csv = chrono_csv.replace('recent','older').replace('.csv','_'+time.strftime('%Y%m%d')+'.csv')
          older.to_csv(older_csv)
-         newer.to_csv(newer_csv)
+         newer.to_csv(chrono_csv)
             
          
 
